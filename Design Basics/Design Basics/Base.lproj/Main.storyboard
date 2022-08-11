@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,31 +13,45 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Design_Basics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-5b-uH2">
-                                <rect key="frame" x="105" y="703" width="204" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button But has a longer text">
-                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3E-za-6SV">
-                                <rect key="frame" x="84" y="640" width="246" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button but has an even longer text">
-                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
-                                </buttonConfiguration>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9q1-Ix-LwG">
+                                <rect key="frame" x="44" y="0.0" width="404" height="196.5"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ef-nv-4c5">
+                                <rect key="frame" x="492" y="0.0" width="404" height="196.5"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gun-sS-yHt">
+                                <rect key="frame" x="492" y="196.5" width="404" height="196.5"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tjb-2e-5iS">
+                                <rect key="frame" x="44" y="196" width="404" height="196.5"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Tak-5b-uH2" firstAttribute="top" secondItem="Q3E-za-6SV" secondAttribute="bottom" constant="32" id="BDn-m1-5ft"/>
-                            <constraint firstItem="Tak-5b-uH2" firstAttribute="centerX" secondItem="Q3E-za-6SV" secondAttribute="centerX" id="Pk0-uC-Z2q"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tak-5b-uH2" secondAttribute="bottom" constant="128" id="dYw-yV-6Vd"/>
-                            <constraint firstItem="Tak-5b-uH2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s62-gg-8R3"/>
+                            <constraint firstItem="9q1-Ix-LwG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1L2-Nh-Yjw"/>
+                            <constraint firstItem="8Ef-nv-4c5" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="89c-Va-yYg"/>
+                            <constraint firstItem="9q1-Ix-LwG" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="CHR-Eo-R5I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gun-sS-yHt" secondAttribute="bottom" id="FC1-cz-2fk"/>
+                            <constraint firstItem="Tjb-2e-5iS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LjH-eF-YpZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tjb-2e-5iS" secondAttribute="bottom" id="N8d-us-GJB"/>
+                            <constraint firstItem="Tjb-2e-5iS" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="ZIn-H8-Du9"/>
+                            <constraint firstAttribute="trailing" secondItem="8Ef-nv-4c5" secondAttribute="trailing" id="aaO-MG-Nn5"/>
+                            <constraint firstItem="9q1-Ix-LwG" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="arp-vb-mpQ"/>
+                            <constraint firstItem="9q1-Ix-LwG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kfU-NT-LT1"/>
+                            <constraint firstItem="gun-sS-yHt" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="o1I-hz-ydd"/>
+                            <constraint firstItem="gun-sS-yHt" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="qfz-yW-Vfj"/>
+                            <constraint firstAttribute="trailing" secondItem="gun-sS-yHt" secondAttribute="trailing" id="vNu-69-Bz7"/>
+                            <constraint firstItem="Tjb-2e-5iS" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="vRh-os-wKI"/>
+                            <constraint firstItem="8Ef-nv-4c5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="voK-7X-nLx"/>
+                            <constraint firstItem="8Ef-nv-4c5" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="wJg-hz-ATP"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -50,8 +64,14 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
