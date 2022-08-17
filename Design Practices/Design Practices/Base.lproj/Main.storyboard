@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Design_Practices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="bgp" translatesAutoresizingMaskIntoConstraints="NO" id="SUz-MW-feu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="XT5-1t-Oaf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="c0y-L2-YOl" userLabel="Top">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="286"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="ax" translatesAutoresizingMaskIntoConstraints="NO" id="SQD-zg-eh3">
+                                                <rect key="frame" x="143" y="79" width="128" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="128" id="CTl-Sa-V73"/>
+                                                    <constraint firstAttribute="height" constant="128" id="Vhw-9e-eIf"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SQD-zg-eh3" firstAttribute="centerY" secondItem="c0y-L2-YOl" secondAttribute="centerY" id="aqk-ps-v2A"/>
+                                            <constraint firstItem="SQD-zg-eh3" firstAttribute="centerX" secondItem="c0y-L2-YOl" secondAttribute="centerX" id="zLK-mZ-PoF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMn-P8-ZWi" userLabel="Middle">
+                                        <rect key="frame" x="0.0" y="287" width="414" height="285.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-VT-iid">
+                                                <rect key="frame" x="7" y="79" width="400" height="128"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="Tpy-T2-Do2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="uXe-nZ-rvh">
+                                                        <rect key="frame" x="136" y="0.0" width="128" height="128"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="Yvc-3V-dSa">
+                                                        <rect key="frame" x="272" y="0.0" width="128" height="128"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="A7S-VT-iid" firstAttribute="centerX" secondItem="iMn-P8-ZWi" secondAttribute="centerX" id="5Ra-oU-QWU"/>
+                                            <constraint firstItem="A7S-VT-iid" firstAttribute="centerY" secondItem="iMn-P8-ZWi" secondAttribute="centerY" id="Faf-Yp-eYk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEO-dA-Gdd" userLabel="Bottom">
+                                        <rect key="frame" x="0.0" y="573.5" width="414" height="288.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="btn_power" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-Xk-h7q">
+                                                <rect key="frame" x="127" y="124.5" width="160" height="40"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2ga-Xk-h7q" firstAttribute="centerX" secondItem="kEO-dA-Gdd" secondAttribute="centerX" id="04s-iR-l4m"/>
+                                            <constraint firstItem="2ga-Xk-h7q" firstAttribute="centerY" secondItem="kEO-dA-Gdd" secondAttribute="centerY" id="8CW-cm-VT4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XT5-1t-Oaf" secondAttribute="trailing" id="DVU-sp-nrT"/>
+                            <constraint firstItem="XT5-1t-Oaf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M3y-u8-Bgu"/>
+                            <constraint firstAttribute="trailing" secondItem="SUz-MW-feu" secondAttribute="trailing" id="aUX-XV-CDc"/>
+                            <constraint firstItem="SUz-MW-feu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kVc-rW-vSI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XT5-1t-Oaf" secondAttribute="bottom" id="l4J-hK-I9k"/>
+                            <constraint firstAttribute="bottom" secondItem="SUz-MW-feu" secondAttribute="bottom" id="mfs-dj-3Ug"/>
+                            <constraint firstItem="XT5-1t-Oaf" firstAttribute="top" secondItem="SUz-MW-feu" secondAttribute="top" id="soF-Vd-aG4"/>
+                            <constraint firstItem="SUz-MW-feu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xQD-Qn-co3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="159"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="piT-vR-YU5">
+            <objects>
+                <viewController id="JS8-ic-5Qq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2gm-xS-oZs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ax" translatesAutoresizingMaskIntoConstraints="NO" id="jVH-5v-gDS">
+                                <rect key="frame" x="107" y="630" width="200" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Development Journey!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQM-sM-uzH">
+                                <rect key="frame" x="105.5" y="846" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GAn-qc-gET"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="jVH-5v-gDS" firstAttribute="centerX" secondItem="2gm-xS-oZs" secondAttribute="centerX" id="NrS-5y-cSk"/>
+                            <constraint firstItem="QQM-sM-uzH" firstAttribute="centerX" secondItem="2gm-xS-oZs" secondAttribute="centerX" id="O0v-ww-9Bg"/>
+                            <constraint firstItem="GAn-qc-gET" firstAttribute="bottom" secondItem="jVH-5v-gDS" secondAttribute="bottom" constant="32" id="cdL-5h-jWG"/>
+                            <constraint firstItem="QQM-sM-uzH" firstAttribute="top" secondItem="jVH-5v-gDS" secondAttribute="bottom" constant="16" id="hon-zn-hol"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rP6-02-UFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-981" y="159"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4" width="128" height="128"/>
+        <image name="5" width="128" height="128"/>
+        <image name="6" width="128" height="128"/>
+        <image name="ax" width="200" height="200"/>
+        <image name="bgp" width="1000" height="1000"/>
+        <image name="btn_power" width="160" height="40"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
