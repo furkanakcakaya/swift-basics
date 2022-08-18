@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func keyPressed(_ sender: UIButton) {
+        print("Button is working")
+    }
+    
 }
 
