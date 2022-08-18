@@ -13,7 +13,8 @@
 		225CB29C28AE765300BBFC1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225CB29A28AE765300BBFC1B /* Main.storyboard */; };
 		225CB29E28AE765500BBFC1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225CB29D28AE765500BBFC1B /* Assets.xcassets */; };
 		225CB2A128AE765500BBFC1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225CB29F28AE765500BBFC1B /* LaunchScreen.storyboard */; };
-		225CB2A928AE7B6700BBFC1B /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 225CB2A828AE7B6700BBFC1B /* Sounds */; };
+		225CB2AD28AE81C000BBFC1B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 225CB2AC28AE81C000BBFC1B /* README.md */; };
+		225CB2B028AE84A600BBFC1B /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 225CB2AA28AE7F3700BBFC1B /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		225CB29D28AE765500BBFC1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		225CB2A028AE765500BBFC1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		225CB2A228AE765500BBFC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		225CB2A828AE7B6700BBFC1B /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		225CB2AA28AE7F3700BBFC1B /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sounds; path = ../../../../../Sounds; sourceTree = "<group>"; };
+		225CB2AC28AE81C000BBFC1B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../../Xylophone-iOS13-master/README.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,7 @@
 		225CB29328AE765300BBFC1B /* Xylophone Remake */ = {
 			isa = PBXGroup;
 			children = (
-				225CB2A828AE7B6700BBFC1B /* Sounds */,
+				225CB2AC28AE81C000BBFC1B /* README.md */,
 				225CB29428AE765300BBFC1B /* AppDelegate.swift */,
 				225CB29628AE765300BBFC1B /* SceneDelegate.swift */,
 				225CB29828AE765300BBFC1B /* ViewController.swift */,
@@ -66,6 +68,7 @@
 				225CB29D28AE765500BBFC1B /* Assets.xcassets */,
 				225CB29F28AE765500BBFC1B /* LaunchScreen.storyboard */,
 				225CB2A228AE765500BBFC1B /* Info.plist */,
+				225CB2AA28AE7F3700BBFC1B /* Sounds */,
 			);
 			path = "Xylophone Remake";
 			sourceTree = "<group>";
@@ -128,9 +131,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225CB2B028AE84A600BBFC1B /* Sounds in Resources */,
 				225CB2A128AE765500BBFC1B /* LaunchScreen.storyboard in Resources */,
 				225CB29E28AE765500BBFC1B /* Assets.xcassets in Resources */,
-				225CB2A928AE7B6700BBFC1B /* Sounds in Resources */,
+				225CB2AD28AE81C000BBFC1B /* README.md in Resources */,
 				225CB29C28AE765300BBFC1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

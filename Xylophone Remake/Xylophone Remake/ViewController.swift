@@ -2,21 +2,37 @@
 //  ViewController.swift
 //  Xylophone Remake
 //
-//  Created by Yapı Kredi Teknoloji A.Ş. on 18.08.2022.
-//
+
+
 
 import UIKit
+import AVFoundation
+
+
 
 class ViewController: UIViewController {
+    
+    var player: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func keyPressed(_ sender: UIButton) {
-        print("Button is working")
+        if let noteName: String = sender.titleLabel?.text as? String {
+            playSound(name: noteName)
+        }
+    }
+    
+    func playSound(name:String) {
+        let url = Bundle.main.url(forResource: name, withExtension: "wav",
+                                  subdirectory: "Sounds")
+        if(url != nil){
+            player = try! AVAudioPlayer(contentsOf: url!)
+            player.play()
+        }else{
+            print("nil")
+        }
     }
     
 }
-

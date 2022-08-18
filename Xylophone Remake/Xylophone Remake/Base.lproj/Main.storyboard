@@ -22,11 +22,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CP4-9v-cok">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="108.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gcr-9D-yaG">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gcr-9D-yaG">
                                                 <rect key="frame" x="10" y="0.0" width="394" height="108.5"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="C">
                                                             <attributes>
@@ -36,7 +36,7 @@
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
-                                                </buttonConfiguration>
+                                                </state>
                                                 <connections>
                                                     <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="izk-Ps-9cq"/>
                                                 </connections>
@@ -52,11 +52,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaD-au-ewp">
                                         <rect key="frame" x="0.0" y="118.5" width="414" height="108"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSU-M8-taS">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HSU-M8-taS">
                                                 <rect key="frame" x="15" y="0.0" width="384" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="D">
                                                             <attributes>
@@ -66,7 +66,10 @@
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
-                                                </buttonConfiguration>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qi7-fy-tJP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -79,11 +82,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wm-He-Bbb">
                                         <rect key="frame" x="0.0" y="236.5" width="414" height="108.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rku-v8-jqG">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rku-v8-jqG">
                                                 <rect key="frame" x="20" y="0.0" width="374" height="108.5"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="E">
                                                             <attributes>
@@ -93,7 +96,10 @@
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
-                                                </buttonConfiguration>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zNg-dR-IPT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -106,11 +112,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ib9-3v-tzl">
                                         <rect key="frame" x="0.0" y="355" width="414" height="108"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzS-5F-dmk">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qzS-5F-dmk">
                                                 <rect key="frame" x="25" y="0.0" width="364" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="F">
                                                             <attributes>
@@ -119,7 +125,10 @@
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
-                                                </buttonConfiguration>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egL-Ht-qEA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -132,11 +141,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tll-d5-aS4">
                                         <rect key="frame" x="0.0" y="473" width="414" height="108.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-N2-cuo">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-N2-cuo">
                                                 <rect key="frame" x="30" y="0.0" width="354" height="108.5"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="G">
                                                             <attributes>
@@ -145,7 +154,10 @@
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
-                                                </buttonConfiguration>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hh8-jU-1rF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -158,11 +170,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTX-EA-X24">
                                         <rect key="frame" x="0.0" y="591.5" width="414" height="108"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emM-g4-WYh">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emM-g4-WYh">
                                                 <rect key="frame" x="35" y="0.0" width="344" height="108"/>
                                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="A">
                                                             <attributes>
@@ -171,7 +183,10 @@
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
-                                                </buttonConfiguration>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eOF-E4-C22"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -184,11 +199,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAS-3W-dnu">
                                         <rect key="frame" x="0.0" y="709.5" width="414" height="108.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4F-cK-RcR">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D4F-cK-RcR">
                                                 <rect key="frame" x="40" y="0.0" width="334" height="108.5"/>
                                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="B">
                                                             <attributes>
@@ -198,7 +213,10 @@
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
-                                                </buttonConfiguration>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKY-pC-GnB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
