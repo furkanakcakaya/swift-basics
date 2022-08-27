@@ -54,6 +54,9 @@
                                                     <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                     <color key="baseForegroundColor" systemColor="systemBlueColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answered:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1rP-yV-myq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -80,6 +83,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                                     <color key="baseForegroundColor" systemColor="systemBlueColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answered:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efR-6Q-HvG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -118,6 +124,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XbP-ZM-fdj" secondAttribute="bottom" constant="32" id="mmx-Q4-YOJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnFalse" destination="lbj-Bm-aik" id="E6N-8o-62c"/>
+                        <outlet property="btnTrue" destination="kBI-ht-fZo" id="zBp-3U-CMz"/>
+                        <outlet property="progressBar" destination="bRN-GG-Fb9" id="kZU-3i-u4r"/>
+                        <outlet property="questionLabel" destination="VBf-Gi-hzY" id="YdU-Yw-fJy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
