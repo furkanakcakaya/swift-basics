@@ -24,7 +24,6 @@ struct QuizLogic{
         Question(q: "Where is Tasmania located?", a: ["Indonesia", "Australia", "Scotland"], correctAnswer: "Australia")
     ]
     
-    
     mutating func checkAnswer(userAnswer: String) -> Bool{
         if userAnswer == quiz[questionNo].correctAnswer {
             score += 1
