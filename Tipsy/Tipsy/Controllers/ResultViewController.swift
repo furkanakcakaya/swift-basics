@@ -13,11 +13,8 @@ class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultLabel.text = String(format: "%.2f", tipBrain?.calculateTip() ?? 0)
-        let bill = tipBrain?.billAmount ?? 0
-        let split = tipBrain?.splitCount ?? 2
-        let tip = (tipBrain?.tipPercentage ?? 0.1) * 100
-        descriptionLabel.text = "\(bill) is split between \(split) people, with \(tip)% tip."
+        resultLabel.text = tipBrain?.getResultLabel()
+        descriptionLabel.text = tipBrain?.getDescription()
     }
     
     @IBOutlet weak var resultLabel: UILabel!

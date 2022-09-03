@@ -9,9 +9,9 @@
 import Foundation
 
 struct TipBrain{
-    var billAmount: Double?
-    var tipPercentage: Double?
-    var splitCount: Int?
+    var billAmount: Double = 0.00
+    var tipPercentage: Double = 0.0
+    var splitCount: Int = 2
     
     mutating func setBillAmount(bill: Double){
         billAmount = bill
@@ -24,6 +24,15 @@ struct TipBrain{
     }
     
     func calculateTip() -> Double{
-        return ((billAmount ?? 0.0) * (1 + (tipPercentage ?? 0.1))) / Double(splitCount ?? 2)
+        return ((billAmount) * (1 + (tipPercentage))) / Double(splitCount)
+    }
+    
+    func getResultLabel() -> String{
+        return String(format: "%.2f", calculateTip())
+    }
+    
+    func getDescription() -> String{
+        let tip = Int(tipPercentage * 100)
+        return "\(billAmount) is split between \(splitCount) people, with \(tip)% tip."
     }
 }

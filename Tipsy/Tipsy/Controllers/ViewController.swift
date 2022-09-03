@@ -12,13 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     var tipBrain = TipBrain()
 
     @IBOutlet weak var billAmountTextField: UITextField!
-    
     @IBOutlet weak var splitLabel: UILabel!
     @IBOutlet weak var zeroButton: UIButton!
     @IBOutlet weak var tenButton: UIButton!
@@ -28,10 +26,8 @@ class ViewController: UIViewController {
         if let billAmount = Double(billAmountTextField.text!){
             tipBrain.setBillAmount(bill: billAmount)
         }
-        
         self.performSegue(withIdentifier: "toResult", sender: self)
     }
- 
     
     @IBAction func onTipSelected(_ sender: UIButton) {
         switch sender.accessibilityIdentifier {
@@ -66,7 +62,5 @@ class ViewController: UIViewController {
             destinationVC.tipBrain = tipBrain
         }
     }
-    
-    
 }
 
