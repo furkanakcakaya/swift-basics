@@ -35,7 +35,7 @@ class CalculateViewController: UIViewController {
         bmiBrain.calculateBMI(weight: weigthSlider.value, height: heightSlider.value)
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
-    
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult"{
