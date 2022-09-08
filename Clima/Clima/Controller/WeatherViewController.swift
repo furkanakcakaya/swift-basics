@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManagerDelegate {
+class WeatherViewController: UIViewController{
 
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -16,12 +17,36 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
     @IBOutlet weak var searchTextField: UITextField!
     
     var weatherManager = WeatherManager()
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        print("aaaa")
         weatherManager.delegate = self
         searchTextField.delegate = self
+        
     }
+    
+}
+
+//MARK: - LocationDelegate
+extension WeatherViewController: CLLocationManagerDelegate{
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("got location")
+    }
+}
+
+
+//MARK: - UITextFieldDelegate
+extension WeatherViewController: UITextFieldDelegate{
     
     @IBAction func seachPressed(_ sender: UIButton) {
         searchTextField.endEditing(true)
@@ -48,15 +73,18 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
         }
         searchTextField.text = ""
     }
+}
+
+//MARK: - WeatherManagerDelegate
+
+extension WeatherViewController: WeatherManagerDelegate{
     
     func didUpdateWeather(_ weather: WeatherModel, _ weatherManager: WeatherManager) {
         DispatchQueue.main.async {
             self.temperatureLabel.text = weather.temperatureString
             self.conditionImageView.image = UIImage(systemName: weather.conditionName)
             self.cityLabel.text = weather.cityName
-            
         }
-        
     }
     
     func didFailWithError(_ error: Error) {
@@ -64,4 +92,3 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
     }
     
 }
-
