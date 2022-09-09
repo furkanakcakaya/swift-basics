@@ -2,7 +2,7 @@
 //  WeatherManager.swift
 //  Clima
 //
-//  Created by Yapı Kredi Teknoloji A.Ş. on 7.09.2022.
+//  Created by Furkan Akçakaya | @axdevelops on 7.09.2022.
 //  Copyright © 2022 App Brewery. All rights reserved.
 //
 
@@ -20,6 +20,11 @@ struct WeatherManager{
     var api_url = "https://api.openweathermap.org/data/2.5/weather?"
     
     var delegate : WeatherManagerDelegate?
+    
+    func fetchWeather(latitude: Double, longtitude: DoubleY){
+        let url = "\(api_url)units=\(units)&appid=\(api_key)&lat=\(latitude)&lon=\(longtitude)"
+        sendRequest(url)
+    }
     
     func fetchWeather(cityName: String){
         let url = "\(api_url)q=\(cityName)&units=\(units)&appid=\(api_key)"

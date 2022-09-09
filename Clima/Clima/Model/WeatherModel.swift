@@ -2,7 +2,7 @@
 //  WeatherModel.swift
 //  Clima
 //
-//  Created by Yapı Kredi Teknoloji A.Ş. on 8.09.2022.
+//  Created by Furkan Akçakaya | @axdevelops on 8.09.2022.
 //  Copyright © 2022 App Brewery. All rights reserved.
 //
 
