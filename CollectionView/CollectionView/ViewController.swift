@@ -72,11 +72,6 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-    
-    fileprivate func registerCells(){
-        collectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: "myCollectionViewCell")
-        collectionView.register(SecondCollectionViewCell.self, forCellWithReuseIdentifier: "secondCollectionViewCell")
-    }
 }
 
 
