@@ -23,3 +23,21 @@ Swift and iOS basics. Design, Widgets, Lifecycle etc.
 ## Xylophone Remake
 - Xylophone application, 7 notes (C-D-E-F-G-A-B)
 - Basic user interaction practice
+
+## Curiosity Quiz
+- Quiz app with score tracking
+- Multiple screens
+- MVC pattern
+
+## BMI-Calculator
+- BMI Calculator app with
+- Multiple screens
+- MVC pattern
+
+## Tipsy
+- Bill splitting application with Tip calculator
+- Basic user interaction practice
+- MVC pattern
+
+## CollectionView
+- Played around with UICollectionView
